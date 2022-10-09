@@ -35,10 +35,10 @@ del.addEventListener('click', () => {
 
 // Comma
 
-function appendNumber(number) {
-    if (number === '.' && currentOperand.includes('.')) return
-    currentOperand = currentOperand.toString() + number.toString()
-}
+// function appendNumber(number) {
+//     if (number === '.' && currentOperand.includes('.')) return
+//     currentOperand = currentOperand.toString() + number.toString()
+// }
 
 // Equal
 
