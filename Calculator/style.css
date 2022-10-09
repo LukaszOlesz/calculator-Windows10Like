@@ -1,0 +1,117 @@
+html, *, body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+body {
+    background-color: rgb(79, 176, 255);
+}
+
+/* Container */
+
+.container {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    background-color: rgb(218, 218, 218);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    border: 1px solid rgb(163, 163, 163);
+    grid-template-columns: 21rem;
+    grid-template-rows: 5rem 27rem;
+}
+
+/* Input */
+
+    .output {
+        width: 100%;
+    }
+
+    .output > div {
+        width: 100%;
+        padding: 1.5rem;
+        border: 0;
+        background-color: rgb(236, 236, 236);
+        font-size: 2.5rem;
+        text-align: right;
+    }
+
+    .output > .previous-operand {
+        height: 1rem;
+        padding: 0;
+        padding-bottom: 1.4rem;
+    }
+
+    .output > .current-operand {
+        padding-bottom: 0.0rem;
+        height: 4.45rem;
+    }
+
+/* Buttons */
+
+.buttons {
+    padding: 1rem;
+    display: grid;
+    gap: 2.2rem 0.2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 3rem);
+}
+
+.buttons > button {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border: 0;
+    font-size: 1rem;
+}
+
+.buttons > .numbers {
+    font-size: 1.4rem;
+}
+
+.buttons > .operands {
+    background-color: rgb(241, 241, 241);
+}
+
+.buttons > .equal {
+    background-color: rgb(148, 207, 255);
+}
+
+/* Buttons Animation */
+
+.buttons > button:hover {
+    cursor: pointer;
+    animation-name: colorChange;
+    animation-duration: 0.2s;
+    background-color: rgb(190, 190, 190);
+}
+
+@keyframes colorChange {
+    from {background-color: white;}
+    to {background-color: rgb(190, 190, 190);}
+}
+
+.buttons > .algorithms:hover {
+    animation-name: colorChangeOpe;
+    animation-duration: 0.2s;
+    background-color: rgb(190, 190, 190);
+}
+
+@keyframes colorChangeOpe {
+    from {background-color: rgb(241, 241, 241);}
+    to {background-color:rgb(190, 190, 190);}
+}
+
+.buttons > .equal:hover {
+    animation-name: colorChangeEq;
+    animation-duration: 0.2s;
+    background-color: rgb(70, 172, 255);
+}
+
+@keyframes colorChangeEq {
+    from {background-color: rgb(148, 207, 255)}
+    to {background-color:rgb(70, 172, 255);}
+}
